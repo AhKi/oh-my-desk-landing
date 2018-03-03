@@ -1,0 +1,8 @@
+{
+  "name": "oh-my-desk-landing",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/AhKi/oh-my-desk-landing.git",
+  "author": "hyunmoahn",
+  "license": "MIT"
+}

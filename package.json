@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/AhKi/oh-my-desk-landing.git",
   "author": "hyunmoahn",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.0.4",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  }
 }

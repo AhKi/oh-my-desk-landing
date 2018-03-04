@@ -1,6 +1,6 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
-import Counter from './components/counter/index.jsx';
+import Counter from 'components/counter';
 
 const App = () => <Counter />;
 

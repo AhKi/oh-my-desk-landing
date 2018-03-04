@@ -34,5 +34,15 @@ module.exports = {
       '__DEV__': process.env.NODE_ENV === 'development',
       '__PROD__': process.env.NODE_ENV === 'production'
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, 'app/assets'),
+      constants: path.resolve(__dirname, 'app/constants'),
+      components: path.resolve(__dirname, 'app/components'),
+      routes: path.resolve(__dirname, 'app/routes'),
+      utils: path.resolve(__dirname, 'app/utils')
+    },
+    extensions: ['.js', '.jsx']
+  },
 };

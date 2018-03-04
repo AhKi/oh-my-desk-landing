@@ -17,10 +17,13 @@ class Counter extends React.Component {
   handleDecrement() {
     this.setState({ value: this.state.value - 1 });
   }
+
   render() {
     return (
       <div>
-        {this.state.value}
+        <div>
+          {this.state.value}
+        </div>
         <button type="button" onClick={this.handleIncrement}>Increment</button>
         <button type="button" onClick={this.handleDecrement}>Decrement</button>
       </div>

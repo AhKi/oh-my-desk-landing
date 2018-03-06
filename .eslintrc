@@ -1,0 +1,38 @@
+{
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-webpack": {
+        "config": "scripts/webpack/webpack.app.config.js"
+      }
+    }
+  },
+  "rules": {
+    "camelcase": 0,
+    "react/prefer-stateless-function": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "no-underscore-dangle": 0,
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 0,
+    "import/no-duplicates": 0,
+    "import/no-named-as-default-member": 0,
+    "jsx-a11y/anchor-is-valid": 0
+  },
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__PROD__": false,
+    "__API_ROOT__": false
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  }
+}

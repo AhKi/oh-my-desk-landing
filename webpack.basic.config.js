@@ -19,6 +19,30 @@ module.exports = {
             loader: 'babel-loader'
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [
+                path.join(__dirname, 'app/scss', '**/_*.scss')
+              ]
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|cur)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
       }
     ]
   },
@@ -40,9 +64,10 @@ module.exports = {
       assets: path.resolve(__dirname, 'app/assets'),
       constants: path.resolve(__dirname, 'app/constants'),
       components: path.resolve(__dirname, 'app/components'),
+      scss: path.resolve(__dirname, 'app/scss'),
       routes: path.resolve(__dirname, 'app/routes'),
       utils: path.resolve(__dirname, 'app/utils')
     },
     extensions: ['.js', '.jsx']
-  },
+  }
 };

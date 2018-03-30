@@ -5,6 +5,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import Counter from 'components/counter';
+import ListSample from 'components/ListSample';
 import App from '../app';
 
 const router = () => (
@@ -12,6 +13,7 @@ const router = () => (
     <Switch>
       <Route exact path="/" component={() => <div>Hello world <Link to="/counter">Go Counter</Link></div>} />
       <Route path="/counter" component={Counter} />
+      <Route path="/list" component={ListSample} />
     </Switch>
   </App>
 );

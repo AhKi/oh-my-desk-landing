@@ -23,7 +23,6 @@ const childContextTypes = {
 class I18nWrapper extends React.Component {
   constructor(props) {
     super(props);
-    console.log('constructor', I18n.language);
     this.state = {
       language: I18n.language,
     };

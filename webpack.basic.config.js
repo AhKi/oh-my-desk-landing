@@ -66,6 +66,7 @@ module.exports = {
       constants: path.resolve(__dirname, 'app/constants'),
       components: path.resolve(__dirname, 'app/components'),
       scss: path.resolve(__dirname, 'app/scss'),
+      text: path.resolve(__dirname, 'app/text'),
       routes: path.resolve(__dirname, 'app/routes'),
       utils: path.resolve(__dirname, 'app/utils')
     },

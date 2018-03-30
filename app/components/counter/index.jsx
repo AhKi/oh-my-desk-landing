@@ -1,4 +1,5 @@
 import React from 'react';
+import I18n from 'utils/I18n';
 import './counter.scss';
 
 class Counter extends React.Component {
@@ -20,8 +21,11 @@ class Counter extends React.Component {
   }
 
   render() {
+    const text = I18n.getText('counter');
+
     return (
       <div className="Counter">
+        {text.title}
         <div>
           {this.state.value}
         </div>
